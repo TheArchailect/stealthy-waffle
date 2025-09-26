@@ -1,0 +1,16 @@
+{
+  "env": [
+    {
+      "FeatherTemplateVarients": "$HOUDINI_PACKAGE_PATH/stealthy-waffle/feather_template_varients"
+    },
+    {
+      "HOUDINI_PATH": [
+        {
+          "houdini_os == 'linux'": "$FeatherTemplateVarients:&",
+          "houdini_os == 'windows'": "$FeatherTemplateVarients;&",
+          "method": "replace"
+        }
+      ]
+    }
+  ]
+}

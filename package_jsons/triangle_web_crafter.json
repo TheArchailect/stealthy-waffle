@@ -1,0 +1,16 @@
+{
+  "env": [
+    {
+      "TriangleWebCrafter": "$HOUDINI_PACKAGE_PATH/stealthy-waffle/triangle_web_crafter"
+    },
+    {
+      "HOUDINI_PATH": [
+        {
+          "houdini_os == 'linux'": "$TriangleWebCrafter:&",
+          "houdini_os == 'windows'": "$TriangleWebCrafter;&",
+          "method": "replace"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "env": [
+    {
+      "PointOrientAlongNormal": "$HOUDINI_PACKAGE_PATH/stealthy-waffle/point_orient_along_normal"
+    },
+    {
+      "HOUDINI_PATH": [
+        {
+          "houdini_os == 'linux'": "$PointOrientAlongNormal:&",
+          "houdini_os == 'windows'": "$PointOrientAlongNormal;&",
+          "method": "replace"
+        }
+      ]
+    }
+  ]
+}
